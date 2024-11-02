@@ -1,0 +1,111 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المستودعات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="container mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid grid-cols-3 gap-4 mb-4">
+                <div>
+                    <label class="block text-gray-700">اسم المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">نوع المستودع</label>
+                    <select class="w-full border border-gray-300 rounded p-2">
+                        <option>رئيسي</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700">التلفون</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">الفاكس</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">اسم أمين المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-end">
+                    <button class="bg-blue-600 text-white p-2 rounded"><i class="fas fa-filter"></i></button>
+                </div>
+                <div>
+                    <label class="block text-gray-700">رقم أمين المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">اسم حساب المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">رقم حساب المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-end">
+                    <button class="bg-blue-600 text-white p-2 rounded"><i class="fas fa-filter"></i></button>
+                </div>
+                <div>
+                    <label class="block text-gray-700">رقم موقع المستودع</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700">العنوان</label>
+                    <input type="text" class="w-full border border-gray-300 rounded p-2">
+                </div>
+            </div>
+            <div class="flex justify-start space-x-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded">إضافة المستودع</button>
+                <button class="border border-gray-300 text-gray-700 px-4 py-2 rounded"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+        <div class="bg-blue-800 text-white p-4 mt-6 rounded-t-lg">
+            <h2 class="text-lg">إدارة المستودعات</h2>
+        </div>
+        <div class="bg-white shadow-md rounded-b-lg overflow-hidden">
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr class="w-full bg-gray-100 text-gray-600 uppercase text-sm leading-normal">
+                        <th class="py-3 px-6 text-left">#</th>
+                        <th class="py-3 px-6 text-left">اسم المستودع</th>
+                        <th class="py-3 px-6 text-left">نوعه</th>
+                        <th class="py-3 px-6 text-left">حساب المستودع</th>
+                        <th class="py-3 px-6 text-left">أمين المستودع</th>
+                        <th class="py-3 px-6 text-left">التلفون</th>
+                        <th class="py-3 px-6 text-left">رقم الموقع</th>
+                        <th class="py-3 px-6 text-left">العنوان</th>
+                        <th class="py-3 px-6 text-left">الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-600 text-sm font-light">
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">1</td>
+                        <td class="py-3 px-6 text-left">المعادي 666</td>
+                        <td class="py-3 px-6 text-left">رئيسي</td>
+                        <td class="py-3 px-6 text-left">بنك الأهلي المصري</td>
+                        <td class="py-3 px-6 text-left">علي فتحي علي سلومة</td>
+                        <td class="py-3 px-6 text-left">023346758</td>
+                        <td class="py-3 px-6 text-left">1</td>
+                        <td class="py-3 px-6 text-left">كورنيش النيل</td>
+                        <td class="py-3 px-6 text-left">
+                            <div class="flex item-center justify-center">
+                                <button class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="w-4 mr-2 transform hover:text-red-500 hover:scale-110">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
